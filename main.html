@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Novely</title>
         <link rel="stylesheet" href='styles.css'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +55,54 @@
                     <div class="home_imgs" id="home_imgs">
                         <img src="./imgs/book4.jpg">
                     </div>
+
+                    <div class="log_sign" id="log_sign">
+                        <h2>Get Started</h2>
+                        <form class="form" id="form">
+                            <h1 class="form__title">Login</h1>
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <input type="text" class="form__input" autofocus placeholder="Username or Email">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                            <div class="form__input-group">
+                                <input type="password" class="form__input" autofocus placeholder="Password">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                            <button class="form__button" type="submit">Continue</button>
+                            <p class="form__text">
+                                <a href="#" class="form__link">Forgot Password?</a>
+                            </p>
+                            <p class="form__text">
+                                <a class="form__link" href="./" id="linkCreateAccount">Create Account</a>
+                            </p>
+                        </form>
+                        <form class="form form--hidden" id="createAccount">
+                            <h1 class="form__title">Create Account</h1>
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                            <div class="form__input-group">
+                                <input type="text" class="form__input" autofocus placeholder="Email">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                            <div class="form__input-group">
+                                <input type="password" class="form__input" autofocus placeholder="Password">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                            <div class="form__input-group">
+                                <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+                                <div class="form__input-error-message"></div>
+                            </div>
+                            <button class="form__button" type="submit">Continue</button>
+                            <p class="form__text">
+                                <a class="form__link" href="./" id="linkLogin">Have An Account?</a>
+                            </p>
+                        </form>
+                    </div>
+
                 </div>
             </section>
         </main>
