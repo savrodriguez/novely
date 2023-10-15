@@ -5,6 +5,7 @@ body{
     margin:0;
 }
 
+/*---- HEADER ----*/
 .nav_header{
     font-family: 'DM Serif Display', serif;
     display: flex;
@@ -12,6 +13,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     padding-left: 20px;
+    padding-bottom: 50px;
 
     color:rgb(0, 0, 0);
     font-size: 1.5em;
@@ -22,7 +24,7 @@ body{
     left:88px;
     top:0; 
     margin: 0;
-    padding-top: 16px;
+    padding-top: 27px;
 
 }
 
@@ -40,6 +42,7 @@ body{
     align-items: baseline;
 }
 
+/*---- NAVIGATION ----*/
 .nav_list{
     display: flex;
     flex-direction: row;
@@ -57,8 +60,15 @@ body{
     text-decoration: none;
     padding: 20px;
     margin: 0;
+
+    cursor: pointer;
 }
 
+.nav_list li a:hover {
+    text-decoration: underline;
+}
+
+/*---- HOME ----*/
 .home_container{
     margin:0;
     padding-top: 60px;
@@ -75,11 +85,11 @@ body{
 }
 
 .home_imgs img{
-    width: auto;
+    width: 500px;
     height: 500px;
     
     margin-top: -150px;
-    padding-left: 20px;
+    padding-left: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -95,9 +105,13 @@ body{
     font-weight: bold;
 }
 
-
-
-
+/*---- LOGSIGN BOX ----*/
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
 
 .log_sign{
     width: 800px;
@@ -112,7 +126,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .log_sign,
@@ -122,6 +135,7 @@ body{
     
 }
 
+/*---- FORMS ----*/
 .form--hidden {
     display: none;
 }
@@ -219,3 +233,145 @@ body{
 .form__link:hover {
     text-decoration: underline;
 }
+
+/*---- TRACK ----*/
+.track{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding: 22px;
+}
+
+.progBar {
+    width: 30px;
+    height: 30px;
+    background-color: #04AA6D;
+    text-align: center; 
+    line-height: 30px; 
+    color: rgb(178, 74, 74); 
+}
+
+/*----- PROFILE -----*/
+.profile{
+    box-shadow: 0 4px 8px grey;
+    max-width: 1080px;
+    max-height: auto;
+    margin: auto;
+    text-align: start;
+    border-radius: 24px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.divider {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 20px;
+    color:grey;
+}
+
+.user_log {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.user_log img{
+    max-height: 130px;
+}
+
+.profile h1{
+    font-size: 50px;
+    font-family:'DM Serif Display', serif;
+}
+.title{
+    color: rgb(64, 130, 99);
+    font-size: 20px;
+}
+
+.info{
+    padding-left: 10px;
+    margin:0;
+
+    font-size: 14px;
+    color: rgb(0, 90, 47);
+
+}
+
+.info, .stats{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    padding: 10px;
+
+}
+
+.stats p{
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px rgb(164, 164, 164);
+    box-shadow: 1px 1px 2px rgb(119, 119, 119), 0 0 25px rgb(132, 132, 132), 0 0 5px rgb(199, 199, 199);
+    padding: 5px;
+    
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 24px;
+    color: rgb(0, 90, 47);
+}
+
+.badges img{
+    max-height: 130px;
+    max-width: auto;
+    padding: 20px;
+}
+
+
+.books img{
+    max-height: 280px;
+    max-width: auto;
+    padding: 40px;
+
+}
+
+.books h2 {
+    text-align: center;
+    font-size: 33px;
+    color: rgb(0, 90, 47);
+}
+
+.books h3 {
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 25px;
+    color: grey;
+}
+

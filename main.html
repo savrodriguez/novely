@@ -10,25 +10,26 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
+    <section class="head">
+
         <header class ='nav_header' id='header'>
             <h1>Novely</h1>
             <div class="logo" id="logo">
                 <img src="./imgs/novel_logo.png">
             </div>
+
+            <!--============   NAVIGATION   ================-->
             <nav class="nav container"></nav>
                 <div class="nav_menu" id="nav_menu">
                     <ul class="nav_list" id="nav_list">
                         <li class="nav_item" id="nav_item">
-                            <a href="#" class="nav_link">Home</a>
+                            <a href="main.html" class="nav_link">Home</a>
                         </li>
                         <li class="nav_item" id="nav_item">
-                            <a href="#" class="nav_link">About</a>
+                            <a href="track.html" class="nav_link">Track</a>
                         </li>
                         <li class="nav_item" id="nav_item">
-                            <a href="#" class="nav_link">Track</a>
-                        </li>
-                        <li class="nav_item" id="nav_item">
-                            <a href="#" class="nav_link">Profile</a>
+                            <a href="profile.html" class="nav_link">Profile</a>
                         </li>
                     </ul>
                 </div>
@@ -36,6 +37,7 @@
         </header>
 
         <main class="main">
+            <!--============   HOME   ================-->
             <section class="home">
                 <div class="home_container">
                     <div class="home_data">
@@ -56,57 +58,63 @@
                         <img src="./imgs/book4.jpg">
                     </div>
 
-                    <div class="log_sign" id="log_sign">
-                        <h2>Get Started</h2>
-                        <form class="form" id="form">
-                            <h1 class="form__title">Login</h1>
-                            <div class="form__message form__message--error"></div>
-                            <div class="form__input-group">
-                                <input type="text" class="form__input" autofocus placeholder="Username or Email">
-                                <div class="form__input-error-message"></div>
-                            </div>
-                            <div class="form__input-group">
-                                <input type="password" class="form__input" autofocus placeholder="Password">
-                                <div class="form__input-error-message"></div>
-                            </div>
-                            <button class="form__button" type="submit">Continue</button>
-                            <p class="form__text">
-                                <a href="#" class="form__link">Forgot Password?</a>
-                            </p>
-                            <p class="form__text">
-                                <a class="form__link" href="./" id="linkCreateAccount">Create Account</a>
-                            </p>
-                        </form>
-                        <form class="form form--hidden" id="createAccount">
-                            <h1 class="form__title">Create Account</h1>
-                            <div class="form__message form__message--error"></div>
-                            <div class="form__input-group">
-                                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
-                                <div class="form__input-error-message"></div>
-                            </div>
-                            <div class="form__input-group">
-                                <input type="text" class="form__input" autofocus placeholder="Email">
-                                <div class="form__input-error-message"></div>
-                            </div>
-                            <div class="form__input-group">
-                                <input type="password" class="form__input" autofocus placeholder="Password">
-                                <div class="form__input-error-message"></div>
-                            </div>
-                            <div class="form__input-group">
-                                <input type="password" class="form__input" autofocus placeholder="Confirm Password">
-                                <div class="form__input-error-message"></div>
-                            </div>
-                            <button class="form__button" type="submit">Continue</button>
-                            <p class="form__text">
-                                <a class="form__link" href="./" id="linkLogin">Have An Account?</a>
-                            </p>
-                        </form>
+
+                   <!--============   LOG/SIGNIN   ================--> 
+                    <div class="center-container">
+                        <div class="log_sign" id="log_sign">
+                            <h2>Get Started</h2>
+                            <form class="form" id="form">
+                                <h1 class="form__title">Login</h1>
+                                <div class="form__message form__message--error"></div>
+                                <div class="form__input-group">
+                                    <input type="text" class="form__input" autofocus placeholder="Username or Email">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                                <div class="form__input-group">
+                                    <input type="password" class="form__input" autofocus placeholder="Password">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                                <button class="form__button" type="submit">Continue</button>
+                                <p class="form__text">
+                                    <a href="#" class="form__link">Forgot Password?</a>
+                                </p>
+                                <p class="form__text">
+                                    <a class="form__link" href="./" id="linkCreateAccount">Create Account</a>
+                                </p>
+                            </form>
+                            <form class="form form--hidden" id="createAccount">
+                                <h1 class="form__title">Create Account</h1>
+                                <div class="form__message form__message--error"></div>
+                                <div class="form__input-group">
+                                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                                <div class="form__input-group">
+                                    <input type="text" class="form__input" autofocus placeholder="Email">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                                <div class="form__input-group">
+                                    <input type="password" class="form__input" autofocus placeholder="Password">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                                <div class="form__input-group">
+                                    <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+                                    <div class="form__input-error-message"></div>
+                                </div>
+                                <button class="form__button" type="submit">Continue</button>
+                                <p class="form__text">
+                                    <a class="form__link" href="./" id="linkLogin">Have An Account?</a>
+                                </p>
+                            </form>
+                        </div>
                     </div>
 
                 </div>
             </section>
+
         </main>
         
         <script src="scripts.js" type="module"></script>
+    </section>
     </body>
 </html>

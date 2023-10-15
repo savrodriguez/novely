@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Novely</title>
+        <link rel="stylesheet" href='styles.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class ='nav_header' id='header'>
+            <h1>Novely</h1>
+            <div class="logo" id="logo">
+                <img src="./imgs/novel_logo.png">
+            </div>
+
+            <!--============   NAVIGATION   ================-->
+            <nav class="nav container"></nav>
+                <div class="nav_menu" id="nav_menu">
+                    <ul class="nav_list" id="nav_list">
+                        <li class="nav_item" id="nav_item">
+                            <a href="main.html" class="nav_link">Home</a>
+                        </li>
+                        <li class="nav_item" id="nav_item">
+                            <a href="track.html" class="nav_link">Track</a>
+                        </li>
+                        <li class="nav_item" id="nav_item">
+                            <a href="profile.html" class="nav_link">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--============   TRACK   ================-->
+            <section class="track" id="track">
+                <div class="track__container container grid">
+                    <div class="track__image">
+                        <img src="./imgs/horizontal.jpg" class="track__img">
+                    </div>
+                    <div class="row">
+                        <div class="userStat">
+                            <h2>Your Progress</h2>
+
+                            <div class="data-input">
+                                <input type="number" class="pagesRead" placeholder="Pages Read">
+                                <input type="number" class="pageTotal" placeholder="Page Total">
+                                <button class="updateButton">Update</button>
+                            </div>
+
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progBar">0%</div>
+                            </div>
+                        </div>
+                        <div class="tracker">
+                            <h2>The Visuals</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        
+        <script src="scripts.js" type="module"></script>
+    </body>
+</html>
