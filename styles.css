@@ -72,24 +72,47 @@ body{
 /*---- HOME ----*/
 .home_container{
     margin:0;
-    padding-top: 60px;
+
 }
 .home_container h1,h3, p{
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     
     padding-top: 15px;
-    padding-right: 80px;
+    padding-right: 60px;
     margin: 0;
+}
+.home_container h1,h3 {
+    padding-left: 23px;
+}
+
+.home_container p{
+    text-align: start;
+}
+
+.home_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 40px;
+    padding-left: 100px;
+
+}
+
+.home_container p {
+    line-height: 3.7;
+    font-size: 14px;
 }
 
 .home_imgs img{
     width: 500px;
     height: 500px;
     
-    margin-top: -150px;
+    margin-top: 0.3%;
     padding-left: 40px;
     display: flex;
     flex-direction: row;
@@ -338,6 +361,9 @@ p{
 .title{
     color: rgb(64, 130, 99);
     font-size: 20px;
+    font-style: italic;
+    font-family: 'DM Serif Display', serif;
+
 }
 
 .info{
@@ -480,6 +506,8 @@ p{
    border: 1px rgb(164, 164, 164);
    box-shadow: 1px 1px 2px rgb(119, 119, 119), 0 0 25px rgb(132, 132, 132), 0 0 5px rgb(199, 199, 199);
    padding: 5px;
+
+   margin-bottom: 2%;
 }
 
 .month{
