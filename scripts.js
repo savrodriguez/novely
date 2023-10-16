@@ -39,39 +39,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //*------- TRACKER -------*//
-var i = 0;
-var interval;
-
-function move() {
-        var elem = document.querySelector('.progress-bar');
-        var width = 20;
-
-        interval = setInterval(frame, 10);
-
-        function frame() {
-            if (width >= 100) {
-                clearInterval(interval);
-                i = 0;
-            }
-            else{
-                width++;
-                elem.style.width = width + "%";
-                elem.innerHTML = width + "%";
-            }
-        }
-    }
-
-function updateProgressBar() {
-    clearInterval(interval);
-    var pagesRead = parseInt(document.querySelector(".pagesRead").value);
-    var pageTotal = parseInt(document.querySelector(".pageTotal").value);
-
-    if (!isNaN(pagesRead) && !isNaN(pageTotal)) {
-        var percentage = (pagesRead / pageTotal) * 100;
-        var elem = document.querySelector('.progress-bar');
-        elem.style.width = percentage + "%";
-        elem.innerHTML = percentage.toFixed(2) + "%";
-        move()
-    }
-}
-console.log()

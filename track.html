@@ -37,33 +37,75 @@
         <main class="main">
             <!--============   TRACK   ================-->
             <section class="track" id="track">
-                <div class="track__container container grid">
-                    <div class="track__image">
-                        <img src="./imgs/horizontal.jpg" class="track__img">
+                <h2>On A Visual Scale</h2>
+                <div class="input">
+                    <h3>Current Read Progression: </h3>
+                        <progress value="180" max="874" id="progressBar"></progress>
+                </div>
+
+                <p>180 / 874 pages   ---------    20% completed</p>
+
+                <div class="streakCount">
+                    <h3>You've logged pages the last 6 days</h3>
+                </div>
+                
+                <div class="calendar">
+                    <div class="month">
+                        <ul>
+                            <li>October 2023</li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="userStat">
-                            <h2>Your Progress</h2>
-
-                            <div class="data-input">
-                                <input type="number" class="pagesRead" placeholder="Pages Read">
-                                <input type="number" class="pageTotal" placeholder="Page Total">
-                                <button class="updateButton">Update</button>
-                            </div>
-
-                            <div class="progress-container">
-                                <div class="progress-bar" id="progBar">0%</div>
-                            </div>
-                        </div>
-                        <div class="tracker">
-                            <h2>The Visuals</h2>
-                        </div>
+                    <div class="list">
+                        <ul class="weekdays">
+                            <li>Mon</li>
+                            <li>Tues</li>
+                            <li>Wed</li>
+                            <li>Thurs</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                            <li>Sun</li>
+                        </ul>
+                        <ul class="days">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li><span class="active">10</span></li>
+                            <li><span class="active">11</span></li>
+                            <li><span class="active">12</span></li>
+                            <li><span class="active">13</span></li>
+                            <li><span class="active">14</span></li>
+                            <li><span class="active">15</span></li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li>31</li>
+                        </ul>
                     </div>
                 </div>
+
             </section>
-            
+
         </main>
         
+
         <script src="scripts.js" type="module"></script>
     </body>
 </html>
